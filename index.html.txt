@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mama 567</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f6f8;
+      color: #111;
+    }
+
+    /* Header */
+    header {
+      height: 75px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+
+    .logo {
+      font-size: 42px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #ed7629;
+    }
+
+    .menu {
+      font-size: 42px;
+      color: #e87832;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* Main */
+    .hero {
+      background: #fff;
+      text-align: center;
+    }
+
+    .title {
+      padding: 32px 10px 5px;
+      font-size: 34px;
+      font-weight: 800;
+    }
+
+    .title span {
+      color: #ed7629;
+    }
+
+    .subtitle {
+      font-size: 25px;
+      font-weight: 700;
+      padding: 0 10px 10px;
+    }
+
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 420px;
+      overflow: hidden;
+      background: #eee;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Buttons Area */
+    .buttons {
+      background: #ffe5e8;
+      padding: 35px 25px 45px;
+      text-align: center;
+    }
+
+    .download-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      width: 85%;
+      max-width: 430px;
+      margin: 0 auto 28px;
+
+      padding: 18px 20px;
+      border-radius: 50px;
+
+      background: #ed7629;
+      color: white;
+      text-decoration: none;
+
+      font-size: 27px;
+      font-weight: 700;
+
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .download-icon {
+      font-size: 30px;
+    }
+
+    .phone {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 28px;
+    }
+
+    .action-btn {
+      width: 100%;
+      max-width: 590px;
+      height: 78px;
+
+      border-radius: 45px;
+      margin: 0 auto 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+
+      text-decoration: none;
+      font-size: 27px;
+      font-weight: 700;
+    }
+
+    .call {
+      background: #fff;
+      color: #111;
+      border: 4px solid #1976ed;
+    }
+
+    .whatsapp {
+      background: #09a276;
+      color: #fff;
+      border: 4px solid #fff;
+    }
+
+    .icon {
+      font-size: 30px;
+    }
+
+    /* Footer */
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+
+      header {
+        height: 72px;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 39px;
+      }
+
+      .menu {
+        font-size: 38px;
+      }
+
+      .title {
+        font-size: 32px;
+        line-height: 1.2;
+      }
+
+      .subtitle {
+        font-size: 24px;
+      }
+
+      .banner {
+        height: 390px;
+      }
+
+      .buttons {
+        padding: 32px 18px 40px;
+      }
+
+      .download-btn {
+        width: 85%;
+        font-size: 25px;
+      }
+
+      .phone {
+        font-size: 25px;
+      }
+
+      .action-btn {
+        height: 70px;
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span>Mama</span> 567
+    </div>
+
+    <div class="menu">
+      ☰
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <h1 class="title">
+      Welcome to <span>Mama567</span>
+    </h1>
+
+    <h2 class="subtitle">
+      Play With The Best
+    </h2>
+
+    <!-- अपनी image का नाम यहां डालें -->
+    <div class="banner">
+      <img src="banner.jpg" alt="Banner">
+    </div>
+
+  </section>
+
+
+  <!-- Buttons -->
+  <section class="buttons">
+
+    <!-- अपना safe app/download URL यहां डालें -->
+    <a href="#" class="download-btn">
+      <span class="download-icon">⇩</span>
+      Download Now
+    </a>
+
+    <!-- अपना phone number यहां बदलें -->
+    <div class="phone">
+      +91 7742853258
+    </div>
+
+    <!-- Call button -->
+    <a href="tel:+917742853258" class="action-btn call">
+      <span class="icon">☎</span>
+      Call Now
+    </a>
+
+    <!-- WhatsApp button -->
+    <a
+      href="https://wa.me/917742853258"
+      class="action-btn whatsapp"
+      target="_blank">
+      <span class="icon">◉</span>
+      WhatsApp
+    </a>
+
+  </section>
+
+
+  <footer>
+    © 2026 Mama567. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
