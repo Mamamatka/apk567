@@ -93,7 +93,7 @@
       text-align: center;
     }
 
-    /* Download Button */
+    /* Download Button with Smooth Glow and Pop-up Animation */
     .download-btn {
       display: flex;
       align-items: center;
@@ -114,7 +114,25 @@
       font-size: 27px;
       font-weight: 700;
 
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      /* Smooth Glowing & Pop-up Animation */
+      animation: smoothGlowPopup 2s infinite ease-in-out;
+      transition: transform 0.3s ease;
+    }
+
+    /* Keyframe for Glow + Smooth Popup Effect */
+    @keyframes smoothGlowPopup {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(237, 118, 41, 0.3);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 22px rgba(237, 118, 41, 0.85), 0 0 35px rgba(237, 118, 41, 0.4);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(237, 118, 41, 0.3);
+      }
     }
 
     /* Download Icon - Arrow + Tray */
@@ -295,10 +313,10 @@
   <section class="buttons">
 
 
-    <!-- Download Button -->
-    <a href="#" class="download-btn">
+    <!-- Download Button with Link & Smooth Glow/Popup Animation -->
+    <a href="https://drive.google.com/file/d/1K6cJiFv0_kddxPGMNTY1whEIO9z29u8u/view?usp=drivesdk" class="download-btn" target="_blank">
 
-      <!-- Same style Download Icon -->
+      <!-- Download Icon -->
       <svg
         class="download-icon"
         viewBox="0 0 64 64"
