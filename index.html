@@ -6,8 +6,9 @@
 
   <title>Mama 567</title>
 
-  <!-- WhatsApp Icon ke liye Font Awesome CDN Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Font Awesome - WhatsApp Icon -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
     * {
@@ -92,6 +93,7 @@
       text-align: center;
     }
 
+    /* Download Button */
     .download-btn {
       display: flex;
       align-items: center;
@@ -106,7 +108,7 @@
       border-radius: 50px;
 
       background: #ed7629;
-      color: white;
+      color: #fff;
       text-decoration: none;
 
       font-size: 27px;
@@ -115,16 +117,28 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
 
+    /* Download Icon - Arrow + Tray */
     .download-icon {
-      font-size: 30px;
+      width: 32px;
+      height: 32px;
+
+      fill: none;
+      stroke: #fff;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+      flex-shrink: 0;
     }
 
+    /* Phone */
     .phone {
       font-size: 28px;
       font-weight: 800;
       margin-bottom: 28px;
     }
 
+    /* Action Buttons */
     .action-btn {
       width: 100%;
       max-width: 590px;
@@ -143,12 +157,14 @@
       font-weight: 700;
     }
 
+    /* Call */
     .call {
       background: #fff;
       color: #111;
       border: 4px solid #1976ed;
     }
 
+    /* WhatsApp */
     .whatsapp {
       background: #09a276;
       color: #fff;
@@ -193,7 +209,7 @@
         font-size: 24px;
       }
 
-      /* Banner mobile */
+      /* Banner Mobile */
       .banner {
         width: 100%;
         height: auto;
@@ -212,6 +228,11 @@
       .download-btn {
         width: 85%;
         font-size: 25px;
+      }
+
+      .download-icon {
+        width: 30px;
+        height: 30px;
       }
 
       .phone {
@@ -234,13 +255,17 @@
 
   <!-- Header -->
   <header>
+
     <div class="logo">
       <span>Mama</span> 567
     </div>
 
     <div class="menu">
+      ☰
     </div>
+
   </header>
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -253,43 +278,81 @@
       Play With The Best
     </h2>
 
+
     <!-- Banner Image -->
     <div class="banner">
-      <img 
-        src="WhatsApp Image 2026-08-13 at 12.06.48.jpeg" 
+
+      <img
+        src="WhatsApp Image 2026-08-13 at 12.06.48.jpeg"
         alt="Mama567 Banner">
+
     </div>
 
   </section>
+
 
   <!-- Buttons -->
   <section class="buttons">
 
+
+    <!-- Download Button -->
     <a href="#" class="download-btn">
-      <span class="download-icon">⇩</span>
+
+      <!-- Same style Download Icon -->
+      <svg
+        class="download-icon"
+        viewBox="0 0 64 64"
+        aria-hidden="true">
+
+        <!-- Down Arrow -->
+        <path d="M32 8v30"></path>
+
+        <path d="M20 27l12 12 12-12"></path>
+
+        <!-- Download Tray -->
+        <path d="M12 38v10c0 4 3 7 7 7h26c4 0 7-3 7-7V38"></path>
+
+      </svg>
+
       Download Now
+
     </a>
 
+
+    <!-- Phone Number -->
     <div class="phone">
       +91 7742853258
     </div>
 
-    <a href="tel:+917742853258" class="action-btn call">
+
+    <!-- Call Button -->
+    <a
+      href="tel:+917742853258"
+      class="action-btn call">
+
       <span class="icon">☎</span>
+
       Call Now
+
     </a>
 
-    <!-- WhatsApp Button with Official Icon -->
+
+    <!-- WhatsApp Button -->
     <a
       href="https://wa.me/917742853258"
       class="action-btn whatsapp"
       target="_blank">
+
       <i class="fa-brands fa-whatsapp icon"></i>
+
       WhatsApp
+
     </a>
 
   </section>
 
+
+  <!-- Footer -->
   <footer>
     © 2026 Mama567. All Rights Reserved.
   </footer>
