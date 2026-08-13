@@ -71,16 +71,15 @@
     /* Banner */
     .banner {
       width: 100%;
-      height: 420px;
+      background: #fff;
       overflow: hidden;
-      background: #eee;
     }
 
     .banner img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
       display: block;
+      object-fit: contain;
     }
 
     /* Buttons Area */
@@ -191,8 +190,16 @@
         font-size: 24px;
       }
 
+      /* Banner mobile */
       .banner {
-        height: 390px;
+        width: 100%;
+        height: auto;
+      }
+
+      .banner img {
+        width: 100%;
+        height: auto;
+        display: block;
       }
 
       .buttons {
@@ -225,50 +232,47 @@
     </div>
 
     <div class="menu">
+      ☰
     </div>
   </header>
-
 
   <!-- Hero Section -->
   <section class="hero">
 
     <h1 class="title">
-      Welcome to <span>Mama567</span>
+      Welcome to <span>Mama567 Matka</span>
     </h1>
 
     <h2 class="subtitle">
       Play With The Best
     </h2>
 
-    <!-- Banner Image Section -->
+    <!-- Banner Image -->
     <div class="banner">
-      <img src="WhatsApp Image 2026-08-13 at 12.06.48.jpeg" alt="Mama567 Banner">
+      <img 
+        src="WhatsApp Image 2026-08-13 at 12.06.48.jpeg" 
+        alt="Mama567 Banner">
     </div>
 
   </section>
 
-
   <!-- Buttons -->
   <section class="buttons">
 
-    <!-- safe app/download URL -->
     <a href="#" class="download-btn">
       <span class="download-icon">⇩</span>
       Download Now
     </a>
 
-    <!-- Phone Number -->
     <div class="phone">
       +91 7742853258
     </div>
 
-    <!-- Call button -->
     <a href="tel:+917742853258" class="action-btn call">
       <span class="icon">☎</span>
       Call Now
     </a>
 
-    <!-- WhatsApp button -->
     <a
       href="https://wa.me/917742853258"
       class="action-btn whatsapp"
@@ -278,7 +282,6 @@
     </a>
 
   </section>
-
 
   <footer>
     © 2026 Mama567. All Rights Reserved.
