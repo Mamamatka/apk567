@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Mama 567</title>
 
-  <!-- Meta Pixel Code -->
+  <!-- Meta Pixel Code (Unchanged) -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -25,374 +24,95 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
-  <!-- Font Awesome - WhatsApp Icon -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     body {
-      background: #f5f6f8;
-      color: #111;
-    }
-
-    /* Header */
-    header {
-      height: 75px;
-      background: #fff;
+      background-color: #f2f4f8;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 0 25px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      justify-content: center;
+      min-height: 100vh;
+      padding: 15px;
     }
 
-    .logo {
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 420px;
+      padding: 60px 25px;
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-icon {
+      width: 130px;
+      height: 130px;
+      background: linear-gradient(180deg, #0b5ed7 0%, #0040a8 100%);
+      border-radius: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
       font-size: 42px;
       font-weight: 800;
+      box-shadow: 0 15px 30px rgba(11, 94, 215, 0.25);
+      margin-bottom: 25px;
     }
 
-    .logo span {
-      color: #ed7629;
-    }
-
-    .menu {
-      font-size: 42px;
-      color: #e87832;
-      cursor: pointer;
-      line-height: 1;
-    }
-
-    /* Main */
-    .hero {
-      background: #fff;
-      text-align: center;
-    }
-
-    .title {
-      padding: 32px 10px 5px;
-      font-size: 34px;
+    .app-name {
+      font-size: 36px;
       font-weight: 800;
+      color: #1a1a1a;
+      margin-bottom: 35px;
+      letter-spacing: -0.5px;
     }
 
-    .title span {
-      color: #ed7629;
-    }
-
-    .subtitle {
-      font-size: 25px;
-      font-weight: 700;
-      padding: 0 10px 10px;
-    }
-
-    /* Banner */
-    .banner {
-      width: 100%;
-      background: #fff;
-      overflow: hidden;
-    }
-
-    .banner img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
-
-    /* Buttons Area */
-    .buttons {
-      background: #ffe5e8;
-      padding: 35px 25px 45px;
-      text-align: center;
-    }
-
-    /* Download Button with Smooth Glow and Pop-up Animation */
     .download-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-
-      width: 85%;
-      max-width: 430px;
-      margin: 0 auto 28px;
-
-      padding: 18px 20px;
-      border-radius: 50px;
-
-      background: #ed7629;
-      color: #fff;
-      text-decoration: none;
-
-      font-size: 27px;
-      font-weight: 700;
-
-      /* Smooth Glowing & Pop-up Animation */
-      animation: smoothGlowPopup 2s infinite ease-in-out;
-      transition: transform 0.3s ease;
-    }
-
-    /* Keyframe for Glow + Smooth Popup Effect */
-    @keyframes smoothGlowPopup {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 4px 10px rgba(237, 118, 41, 0.3);
-      }
-      50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 22px rgba(237, 118, 41, 0.85), 0 0 35px rgba(237, 118, 41, 0.4);
-      }
-      100% {
-        transform: scale(1);
-        box-shadow: 0 4px 10px rgba(237, 118, 41, 0.3);
-      }
-    }
-
-    /* Download Icon - Arrow + Tray */
-    .download-icon {
-      width: 32px;
-      height: 32px;
-
-      fill: none;
-      stroke: #fff;
-      stroke-width: 4;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-
-      flex-shrink: 0;
-    }
-
-    /* Phone */
-    .phone {
-      font-size: 28px;
-      font-weight: 800;
-      margin-bottom: 28px;
-    }
-
-    /* Action Buttons */
-    .action-btn {
       width: 100%;
-      max-width: 590px;
-      height: 78px;
-
-      border-radius: 45px;
-      margin: 0 auto 20px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-
+      background-color: #0056e0;
+      color: #ffffff;
       text-decoration: none;
-      font-size: 27px;
+      padding: 18px;
+      border-radius: 16px;
+      font-size: 20px;
       font-weight: 700;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0, 86, 224, 0.3);
+      transition: background-color 0.2s, transform 0.1s;
     }
 
-    /* Call */
-    .call {
-      background: #fff;
-      color: #111;
-      border: 4px solid #1976ed;
-    }
-
-    /* WhatsApp */
-    .whatsapp {
-      background: #09a276;
-      color: #fff;
-      border: 4px solid #fff;
-    }
-
-    .icon {
-      font-size: 34px;
-    }
-
-    /* Footer */
-    footer {
-      background: #fff;
-      text-align: center;
-      padding: 25px 10px;
-      color: #777;
-      font-size: 14px;
-    }
-
-    /* Mobile */
-    @media (max-width: 600px) {
-
-      header {
-        height: 72px;
-        padding: 0 20px;
-      }
-
-      .logo {
-        font-size: 39px;
-      }
-
-      .menu {
-        font-size: 38px;
-      }
-
-      .title {
-        font-size: 32px;
-        line-height: 1.2;
-      }
-
-      .subtitle {
-        font-size: 24px;
-      }
-
-      /* Banner Mobile */
-      .banner {
-        width: 100%;
-        height: auto;
-      }
-
-      .banner img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .buttons {
-        padding: 32px 18px 40px;
-      }
-
-      .download-btn {
-        width: 85%;
-        font-size: 25px;
-      }
-
-      .download-icon {
-        width: 30px;
-        height: 30px;
-      }
-
-      .phone {
-        font-size: 25px;
-      }
-
-      .action-btn {
-        height: 70px;
-        font-size: 25px;
-      }
-
-      .icon {
-        font-size: 30px;
-      }
+    .download-btn:active {
+      transform: scale(0.98);
+      background-color: #0044b3;
     }
   </style>
 </head>
-
 <body>
 
-  <!-- Header -->
-  <header>
-
-    <div class="logo">
-      <span>Mama</span> 567
+  <div class="card">
+    <!-- Blue App Icon Box -->
+    <div class="app-icon">
+      567
     </div>
 
-    <div class="menu">
-      ☰
-    </div>
+    <!-- Title -->
+    <h1 class="app-name">Mama567</h1>
 
-  </header>
-
-
-  <!-- Hero Section -->
-  <section class="hero">
-
-    <h1 class="title">
-      Welcome to <span>Mama567 Matka</span>
-    </h1>
-
-    <h2 class="subtitle">
-      Play With The Best
-    </h2>
-
-
-    <!-- Banner Image -->
-    <div class="banner">
-
-      <img
-        src="WhatsApp Image 2026-08-13 at 12.06.48.jpeg"
-        alt="Mama567 Banner">
-
-    </div>
-
-  </section>
-
-
-  <!-- Buttons -->
-  <section class="buttons">
-
-
-    <!-- Download Button with Link & Smooth Glow/Popup Animation -->
+    <!-- Original Download Link (Unchanged) -->
     <a href="https://drive.google.com/file/d/1K6cJiFv0_kddxPGMNTY1whEIO9z29u8u/view?usp=drivesdk" class="download-btn" target="_blank">
-
-      <!-- Download Icon -->
-      <svg
-        class="download-icon"
-        viewBox="0 0 64 64"
-        aria-hidden="true">
-
-        <!-- Down Arrow -->
-        <path d="M32 8v30"></path>
-
-        <path d="M20 27l12 12 12-12"></path>
-
-        <!-- Download Tray -->
-        <path d="M12 38v10c0 4 3 7 7 7h26c4 0 7-3 7-7V38"></path>
-
-      </svg>
-
-      Download Now
-
+      Download App
     </a>
-
-
-    <!-- Phone Number -->
-    <div class="phone">
-      +91 7742853258
-    </div>
-
-
-    <!-- Call Button -->
-    <a
-      href="tel:+917742853258"
-      class="action-btn call">
-
-      <span class="icon">☎</span>
-
-      Call Now
-
-    </a>
-
-
-    <!-- WhatsApp Button -->
-    <a
-      href="https://wa.me/917742853258"
-      class="action-btn whatsapp"
-      target="_blank">
-
-      <i class="fa-brands fa-whatsapp icon"></i>
-
-      WhatsApp
-
-    </a>
-
-  </section>
-
-
-  <!-- Footer -->
-  <footer>
-    © 2026 Mama567. All Rights Reserved.
-  </footer>
+  </div>
 
 </body>
 </html>
